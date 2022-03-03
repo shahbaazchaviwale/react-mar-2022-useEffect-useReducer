@@ -14,7 +14,7 @@ function App() {
   if(userLggedIn === '1' ){
     setIsLoggedIn(true);
   }
-  console.log('useEffect>>')
+  console.log('useEffect-1>>')
   }, []);
 
   const loginHandler = (email, password) => {
@@ -30,7 +30,7 @@ function App() {
 
 
   };
-  console.log('useEffect-2>>');
+  console.log('Main page>>');
   return (
     <React.Fragment>
       <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
